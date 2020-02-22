@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: aquamarine;
+
+}
+body > nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+body > nav .right_side{
+    padding: 5px;
+display: flex;    
+flex-direction: column;
+justify-content: space-evenly;
+min-height: 200px;
+
+}
+
+body > nav .right_side .btn1{
+    background-color: blue  ;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+}
+
+body > nav .right_side .btn{
+    border-radius: 10%;
+    font-size: small;
+}
+
+body > nav .left_side > form .home{
+   display: block;
+    background-color: blue;
+    border-radius: 30%;
+    
+    }
+
+    input{
+   border-radius: 6px;
+
+  background: #FFF ;
+    }
+
+ body .Formulario{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50vw;
+
+     padding: 2px;
+    }   
