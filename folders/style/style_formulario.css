@@ -10,16 +10,9 @@ body{
     justify-content: space-between;
 }
 
-img {
-    width: 50px;
-    height: 50px;
-}
-H1{
-    font-size: 80px;
-}
-h1 span{
-    color: rgb(46, 91, 240);
-}
+
+H1{font-size: 80px;}
+h1 span{color: rgb(46, 91, 240);}
 
 body > nav {
     padding: 10px;
@@ -128,4 +121,4 @@ body > nav .left_side > form .home{
     body > nav .right_side :first-child:visited{
         color: rgb(145, 21, 118);
     }
-
+    

@@ -67,6 +67,22 @@ body > nav .left_side > form .home{
     border-radius: 30%;
         
     }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-row-gap:10px;
+        grid-column-gap: 100px;
+        margin: 30px;
+    }
+    .div1{
+
+    grid-area: 1/1/2/2;}
+
+    .div2{
+        grid-area: 1/2/2/3;}
+    .div3{
+        grid-area: 2/2;}
 
      footer{
         display: flex;
