@@ -1,6 +1,6 @@
 body{
     font-family:sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     background-color: rgb(159, 209, 221);
+     /* background-color: rgb(159, 209, 221); */
     margin: 0;
     padding:0;
     width: 100vw;
@@ -8,10 +8,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*background-image: url("/imagenes/image.jpeg");
+    background-image: url("../../imagenes/image.jpeg");
      background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     
 }
 
