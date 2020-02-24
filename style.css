@@ -1,0 +1,149 @@
+/* Defino el estilo que tendra todo el cuerpo de mi trabajo */
+body{
+    font-family:sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     color:rgb(194, 214, 194); 
+}
+
+/* le doto una opacidad al fondo par que se mas tenue y deje ver las notas */
+#fondo{
+    position: absolute;
+    width: 100vw;
+    z-index: -2;
+    height: 100vh;
+}
+
+/* Le pongo un estilo y resalto la parte de Robot para que sea mas facil de localizar en la web */
+H1{
+    font-size: 80px;
+    color: rgb(223, 67, 67);}
+
+h1 span{color: rgb(202, 208, 224);}
+
+/* Le doy un justificado con Flex a los elementos de navegacion */
+body > nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+
+
+/* ajusto mi boton de inicio con el cual me permitira regresar a la pagina prinncipal activandolo */
+    
+body > nav .left_side > form .home{
+    display: block;
+    background-color: blue;
+    border-radius: 30%;  }
+     
+ /* ajusto mis bototnes de mi parte derecha para que esten organizados en forma de columna    */
+body > nav .right_side{
+ adding: 5px;
+display: flex;    
+flex-direction: column;
+justify-content: space-evenly;
+min-height: 200px;}
+
+/* creo un boton opcional que posteriormente sera el que me permita desplegar mis botones de ayuda y/o busqueda */
+body > nav .right_side .btn1{
+    background-color: blue  ;
+    color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 30%;  }
+
+body > nav .right_side .btn{
+    border-radius: 10%;
+    font-size: small;
+}
+/* Estilo a los input */
+body input{
+    color: whitesmoke;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    transition: all .5s ease;
+    transform-style: preserve-3d;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #1883ba;
+    border-radius: 3px;
+    border: 2px solid #0016b0;
+}
+/* creo el formulario que utilizare en la pagina de contactos */
+    body .Formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        max-height:20%;
+       }  
+
+/* mediante el recurso de grid pongo la informacion en una cuadricula donde mas adelante quisiera que fuera un cuadro desplegable cona alguna iteracion  */
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-row-gap:10px;
+        grid-column-gap: 100px;
+        margin: 30px;}
+    .container > p{
+        color: azure; 
+    }    
+
+    .div1{grid-area: 1/1/2/2;}
+    .div2{grid-area: 1/2/2/3;}
+    .div3{grid-area: 2/2;}
+     
+    /* le doy una forma de fila a mi footer dende ofrezco la informacion sobre el que lo realizo y la version */
+     footer{
+        display: flex;
+        justify-content: space-around;
+        margin: 5px;
+        padding: 10px;
+        color: aqua; }
+
+     .div3 > a{
+         color: honeydew;
+     }
+
+    /* botones :hover */
+
+    body > nav .left_side > form input:after {
+        content: "Enlace";
+        position: absolute;
+        top: -100%;
+        left: 0px;
+        width: 100%;
+        background: #ccc;
+        transform-origin: left bottom;
+        transform: rotateX(90deg);
+        }
+   body > nav .left_side > form .first:hover {
+            transform-origin: center bottom;
+            transform: rotateX(-90deg) translateY(100%);}
+
+    body > nav .left_side > form .back:hover{
+        background-color: brown;
+    } 
+
+    body > nav .right_side .btn1:hover {
+        color: rgb(165, 26, 26);
+        opacity: 0; }
+
+
+    body > nav .right_side .btn .first:hover{
+        color: #1883ba;
+        background-color: #ffffff}
+
+    body > nav .right_side :first-child:visited{
+        color: rgb(145, 21, 118); }
