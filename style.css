@@ -102,8 +102,15 @@ body input{
 
     .div1{grid-area: 1/1/2/2;}
     .div2{grid-area: 1/2/2/3;}
-    .div3{grid-area: 2/2;}
-     
+    .div3{grid-area: 2/1/1fr;}
+    .div4{grid-area: 2/2/1fr;}
+
+
+    .div3 a{
+        text-decoration: none; 
+        color: honeydew;}
+       
+
     /* le doy una forma de fila a mi footer dende ofrezco la informacion sobre el que lo realizo y la version */
      footer{
         display: flex;
@@ -112,12 +119,14 @@ body input{
         padding: 10px;
         color: aqua; }
 
-     .div3 > a{
-         color: honeydew;
-     }
-
     /* botones :hover */
 
+    .div3 > a:hover{
+
+        text-decoration: underline;    
+        font-weight: bold;
+        } 
+        
     body > nav .left_side > form input:after {
         content: "Enlace";
         position: absolute;
@@ -141,7 +150,7 @@ body input{
         opacity: 0; }
 
 
-    body > nav .right_side .btn .first:hover{
+    body > nav .right_side .btnI:hover{
         color: #1883ba;
         background-color: #ffffff}
 
